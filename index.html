@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta  charset="utf-8" />
+		<meta http-equiv="refresh" content="900">
+		<title>全国借贷信息大数据平台</title>
+		<link rel="stylesheet" href="css/main.min.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<!--头部 -->
+			<ul class="clearfix">
+				<li id="showtimes">
+					<p id="time" class="font_24"></p>
+					<p id="year"></p>
+				</li>
+				<li class="list_02">
+					<p class="number_all font_24" id="number_allCountry"></p>
+					<p class="font-18 color_gray">全国贷款人数</p>
+				</li>
+				<li class="list_03">
+					<p class=" font_24" id='number_day'></p>
+					<p class="font-18 color_gray">等待放款人数</p>
+				</li>
+				<li id="list_04">
+					<span>￥</span><span id="all"></span>
+				</li>
+				<li id="list_05">
+					<p class="date_money" ><span>￥</span><span id='money_day'></span></p>
+					<p class="font-18 brow_money">当天放贷总金额</p>
+				</li> 
+			</ul>
+			<!--头部 end-->
+			
+			<!--表格&&地图-->
+			<div class="content">
+				<div class="order">
+					<p class="font_white">各省借贷排名</p>
+					<table border="0" cellpadding="10" cellspacing="0" class="table" id="mytable">
+						<tr>
+							<td style="color:#19a9da;">排名</td>
+							<td>省会</td>
+							<td>人次</td>
+							<td>历史总金额</td>
+							<td>当天总金额</td>
+						</tr>
+					</table>
+				</div>
+				<div id="mainMap" style="height:1000px;width: 1100px;"></div>
+			</div>
+			<!--借款人信息-->
+			<div class="user_border">
+				<img src="img/user_in.png"/>
+			</div>
+			<div class="info">
+			</div>
+			<!--轮播头像-->
+			<div class="banner">
+				<ul class='clear'>
+				</ul>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/echarts.js"></script>
+		<script src="js/map_01.js"></script>
+		<script src="js/time.js"></script>
+		<script src="js/index.js"></script>
+    </body>
+</html>
